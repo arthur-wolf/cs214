@@ -1,0 +1,16 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/Users/arthur/Library/Application Support/Coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/Users/arthur/epfl/ba3/cs214/exos/week1/.scala-build/ide-options-v2.json",
+    "/Users/arthur/epfl/ba3/cs214/exos/week1"
+  ],
+  "version": "1.0.4",
+  "bspVersion": "2.1.0-M5",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
