@@ -8,14 +8,14 @@ object FuncContext:
     String => LookupResult
 
   def empty: Context =
-    ???
+     (x: String) => NotFound
 
   def cons(name: String, value: Int, rem: Context): Context =
-    ???
+    x => if name == x then Ok(value) else rem(x)
 
   def lookup(ctx: Context, name: String): LookupResult =
-    ???
+    ctx(name)
 
   def erase(ctx: Context, name: String): Context =
-    ???
+    x => if name == x then NotFound else ctx(x)
 

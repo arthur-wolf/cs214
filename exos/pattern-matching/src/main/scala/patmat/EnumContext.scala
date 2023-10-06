@@ -38,5 +38,3 @@ object EnumContext:
       case Cons(n, v, tail) =>
         if pred(n, v) then cons(n, v, filter(tail, pred))
         else filter(tail, pred)
-
-
