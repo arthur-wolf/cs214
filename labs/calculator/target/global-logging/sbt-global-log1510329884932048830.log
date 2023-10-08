@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly -- "*tiny evaluator:*", Some(a503cfda-b145-4aec-8a98-0a22bd6dc10f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/arthur/epfl/ba3/cs214/labs/calculator/target/scala-3.3.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 10, Failed 0, Errors 0, Passed 10[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed 8 oct. 2023, 14:19:06[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

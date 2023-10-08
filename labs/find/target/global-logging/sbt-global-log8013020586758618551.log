@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(70227561-b8bd-43ef-9995-534d22c609a9), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/arthur/epfl/ba3/cs214/labs/find/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/arthur/epfl/ba3/cs214/labs/find/target/scala-3.3.1/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 16, Failed 0, Errors 0, Passed 16[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 3 s, completed 26 sept. 2023, 08:07:04[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

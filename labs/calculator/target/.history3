@@ -1,0 +1,30 @@
+1696686898035:compile
+1696686970626:testOnly -- "*show:*"
+1696767346531:testOnly -- "*toPolish:*"
+1696767384483:runMain calculator.webserver
+1696767388787:runMain calculator.webServer
+1696767397533:runMain calculator.WebServer
+1696767544528:testOnly -- "*tiny evaluator:*"
+1696767567415:runMain calculator.WebServer
+1696767579813:runMain calculator.WebServere
+1696767581336:runMain calculator.WebServer
+1696767790410:testOnly -- "*basic evaluator:*"
+1696767897372:runMain calculator.WebServer
+1696767913309:runMain calculator.WebServer
+1696768079230:testOnly -- "*basic calculator:*"
+1696768095237:testOnly -- "*basic evaluator:*"
+1696768144955:runMain main
+1696768372315:testOnly -- "*basic evaluator:*"
+1696768961392:testOnly -- "*full evaluator:*"
+1696769496949:runMain calculator.WebServer
+1696770022858:testOnly -- "*full evaluator:*"
+1696770760079:testOnly -- "*constfold:*"
+1696770961139:testOnly -- "*algebraix:*"
+1696770965359:testOnly -- "*algebraic:*"
+1696771231482:testOnly -- "*simplify:*"
+1696771235535:testOnly -- "*simp:*"
+1696771242461:testOnly -- "*simplifier:*"
+1696771259981:testOnly -- "*combined simplifier:*"
+1696773861342:testOnly -- "*smallstep:*"
+1696773892767:testOnly -- "*combined simplifier:*"
+1696778358821:test

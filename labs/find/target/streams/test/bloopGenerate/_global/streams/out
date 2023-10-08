@@ -1,0 +1,4 @@
+[debug] [find-test] Classpath dependencies List()
+[debug] [find-test] Dependencies from configurations List(find)
+[debug] Bloop wrote the configuration of project 'find-test' to '/Users/arthur/epfl/ba3/cs214/labs/find/.bloop/find-test.json'
+[success] Generated .bloop/find-test.json

@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(runMain calculator.WebServer, Some(c86a630f-601a-4206-a951-d2dab95817e2), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / runMain[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mjava.net.BindException: Address already in use[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind(Net.java:555)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind(Net.java:544)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:164)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.nio.channels.AsynchronousServerSocketChannel.bind(AsynchronousServerSocketChannel.java:198)[0m
+[0m[[0m[31merror[0m] [0m[0m	at fs2.io.net.SocketGroupCompanionPlatform.fs2$io$net$SocketGroupCompanionPlatform$AsyncSocketGroup$$_$$anonfun$2$$anonfun$3$$anonfun$1(SocketGroupPlatform.scala:96)[0m
+[0m[[0m[31merror[0m] [0m[0m	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$2$$anonfun$3(SocketGroupPlatform.scala:98)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrunMain[0m) java.net.BindException: Address already in use[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 8 oct. 2023, 14:19:56[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

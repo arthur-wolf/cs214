@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="tsf-452-wpa-2-212.epfl.ch" name="CalcTest" tests="256" errors="0" failures="0" skipped="0" time="0.163" timestamp="2023-10-08T17:19:33">
+          <properties>
+      <property name="java.specification.version" value="17"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://adoptium.net/"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/Users/arthur/Library/Caches/Coursier/arc/https/github.com/sbt/sbt/releases/download/v1.9.6/sbt-1.9.6.zip/sbt/bin/sbt-launch.jar"/><property name="jdk.debug" value="release"/><property name="sun.stderr.encoding" value="UTF-8"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2023-01-17"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
+"/><property name="sun.stdout.encoding" value="UTF-8"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="17.0.6+10"/><property name="user.name" value="arthur"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="java.vendor.version" value="Temurin-17.0.6+10"/><property name="java.io.tmpdir" value="/var/folders/25/sm73v1fj2zd3yn5z3lmrmfcm0000gn/T/"/><property name="java.version" value="17.0.6"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/arthur/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vendor" value="Eclipse Adoptium"/><property name="scala.ext.dirs" value="/Users/arthur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_17_0_6"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.class.path" value="/Users/arthur/Library/Caches/Coursier/arc/https/github.com/sbt/sbt/releases/download/v1.9.6/sbt-1.9.6.zip/sbt/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Eclipse Adoptium"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Europe/Zurich"/><property name="java.vm.specification.version" value="17"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="CH"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/arthur"/><property name="user.language" value="fr"/><property name="sbt.script" value="/Users/arthur/Library/Caches/Coursier/arc/https/github.com/sbt/sbt/releases/download/v1.9.6/sbt-1.9.6.zip/sbt/bin/sbt"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/25/sm73v1fj2zd3yn5z3lmrmfcm0000gn/T/.sbtf7006dea/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/25/sm73v1fj2zd3yn5z3lmrmfcm0000gn/T/.sbtf7006dea/swoval"/><property name="jline.esc.timeout" value="0"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="path.separator" value=":"/><property name="os.version" value="14.0"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="user.dir" value="/Users/arthur/epfl/ba3/cs214/labs/calculator"/><property name="os.arch" value="aarch64"/><property name="java.vm.info" value="mixed mode"/><property name="java.vm.version" value="17.0.6+10"/><property name="java.class.version" value="61.0"/>
+    </properties>
+          <testcase classname="CalcTest" name="show: show(0) should be Number(0.0) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1) should be Number(1.0) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1.5) should be Number(1.5) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1+1) should be Add(Number(1.0),Number(1.0)) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1-1) should be Minus(Number(1.0),Number(1.0)) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1*1) should be Mul(Number(1.0),Number(1.0)) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(1+(2+3)) should be Add(Number(1.0),Add(Number(2.0),Number(3.0))) (0pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(-(1+1)) should be Neg(Add(Number(1.0),Number(1.0))) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="show: show(-(1+2*3*(4-5))) should be Neg(Add(Number(1.0),Mul(Mul(Number(2.0),Number(3.0)),Minus(Number(4.0),Number(5.0))))) (0pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(0) should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1) should be 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1.5) should be 1.5 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1+1) should be + 1.0 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1-1) should be - 1.0 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1*1) should be * 1.0 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1+(2+3)) should be + 1.0 + 2.0 3.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(-(1+1)) should be -- + 1.0 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(-(1+2*3*(4-5))) should be -- + 1.0 * * 2.0 3.0 - 4.0 5.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="toPolish: toString(1 + -1) should be + 1.0 -- 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 0 should be 0.0 (1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: -1 should be -1.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 100 should be 100.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 0+1 should be 1.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 1-2 should be -1.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 0*1 should be 0.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: -1+1 should be 0.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 1+2-3 should be 0.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 1-2-3+2+3 should be 1.0 (1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="tiny evaluator: 1*2+3*4-10 should be 4.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 0 should be Ok(0.0) (0.4pt)" time="0.006">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: -1 should be Ok(-1.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 100 should be Ok(100.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 0+1 should be Ok(1.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1-2 should be Ok(-1.0) (0.4pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 0*1 should be Ok(0.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/2 should be Ok(0.5) (0.4pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: -1+1 should be Ok(0.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: -1/(1+1) should be Ok(-0.5) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: -(-2*2)/(1/5)-19 should be Ok(1.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 2*(3+4/2) should be Ok(10.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/0.1 should be Ok(10.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/10+1 should be Ok(1.1) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1+2-3 should be Ok(0.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1-2-3+2+3 should be Ok(1.0) (0.4pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 0/0 should result in an error (0.8pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/0 should result in an error (0.8pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/(1-1) should result in an error (0.8pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1/(0*1) should result in an error (0.8pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="basic evaluator: 1+3/(2*0) should result in an error (0.8pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a under Cons(a,1.0,Empty) should return 1.0 (0.5pt)" time="0.002">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating b under Cons(a,1.0,Empty) should throw a variable-not-found error (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a*a under Cons(a,1.0,Empty) should return 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating -a under Cons(a,1.0,Empty) should return -1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a + a * a under Cons(a,1.0,Empty) should return 2.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating 2*a + 3*a + a/2 under Cons(a,1.0,Empty) should return 5.5 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a+a-2/(2*a) under Cons(a,1.0,Empty) should return 1.0 (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a/0 under Cons(a,1.0,Empty) should throw a division-by-zero error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating 0/0 under Cons(a,1.0,Empty) should throw a division-by-zero error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a/(a-1) under Cons(a,1.0,Empty) should throw a division-by-zero error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a under Cons(a,1.0,Cons(b,0.0,Empty)) should return 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating b under Cons(a,1.0,Cons(b,0.0,Empty)) should return 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a - b under Cons(a,1.0,Cons(b,0.0,Empty)) should return 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating b - a under Cons(a,1.0,Cons(b,0.0,Empty)) should return -1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating b * (2 + 3 + 4) under Cons(a,1.0,Cons(b,0.0,Empty)) should return 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating c under Cons(a,1.0,Cons(b,0.0,Empty)) should throw a variable-not-found error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a + b + c under Cons(a,1.0,Cons(b,0.0,Empty)) should throw a variable-not-found error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating 1/b under Cons(a,1.0,Cons(b,0.0,Empty)) should throw a division-by-zero error (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a + b * 2 under Cons(a,1.0,Cons(b,0.0,Empty)) should return 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="full evaluator: evaluating a / (b - 1 + 1) under Cons(a,1.0,Cons(b,0.0,Empty)) should throw a division-by-zero error (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 1+1 should be 2.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 1-1 should be 0.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 2/2 should be 1.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 10*10 should be 100.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 1+2+3 should be 6.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding 1+2*3 should be 7.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding a+2*3 should be a + 6.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding a*(2*3) should be a * 6.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding a*(2*3*4) should be a * 24.0 (1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="constfold: const-folding a+b+c*(1-2) should be a + b + c * -1.0 (1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 0+a should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 0+a/b should be a / b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a+0 should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)+0 should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 0-a should be -a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a-0 should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)-0 should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)-(0*a) should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 0*a should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 0*(a+2) should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*0 should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+2)*0 should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 1*a should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 1*(a+b) should be a + b (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (0*a+1-0)*(a+b) should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*1 should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)*1 should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)*(1*1+0*a) should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a/1 should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+b)/1 should be a + b (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a-a should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a+a)-(a+a) should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a-a+1)*a*a should be a * a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify (a-a+1)*a*a-a*a should be 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify 1*a-0 should be a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*a-0*(a+b+c/d) should be a * a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*a*a*1 should be a * a * a (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*(1+2) should be a * (1.0 + 2.0) (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*(1+2)+(b-b) should be a * (1.0 + 2.0) (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="algebraic: simplify a*(1+2)*(b*(c-c)+1)+(b-b) should be a * (1.0 + 2.0) (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 1+1 should be 2.0 (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 1+2+3 should be 6.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 0+a should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 0+a/b should be a / b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a+0 should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)+0 should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 0-a should be -a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (1-1)-a should be -a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a-0 should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)-0 should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)-(0*a) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)-(1-1+a*0) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 0*a should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 0*(a+2) should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (1-1)*(a+b) should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a*0 should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+2)*0 should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b*c)*(1-1) should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b*c)*(1-1)+1/5 should be 0.2 (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 1*a should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 1*(a+b) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (0*a+1-0)*(a+b) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a*1 should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)*1 should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)*(1*1+0*a) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a/1 should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)/1 should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+b)/(2/2) should be a + b (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a-a should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a+a)-(a+a) should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a-a+1)*a*a should be a * a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify (a-a+1)*a*a-a*a should be 0.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify 1*a-0 should be a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a*a-0*(a+b+c/d) should be a * a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: simplify a*a*a*1 should be a * a * a (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="combined simplifier: randomized tests (11.5pt)" time="0.129">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 0 should be small-step evaluated to 0.0 (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: -1 should be small-step evaluated to -1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 100 should be small-step evaluated to 100.0 (0.5pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 0+1 should be small-step evaluated to 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 1-2 should be small-step evaluated to -1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 0*1 should be small-step evaluated to 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: -1+1 should be small-step evaluated to 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 1+2-3 should be small-step evaluated to 0.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 1-2-3+2+3 should be small-step evaluated to 1.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: 1*2+3*(1-2-3) should be small-step evaluated to -10.0 (0.5pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 0: reduce -((-88.0 + -7.0 - -70.0 - (-42.0 + 87.0)) * (43.0 + --54.0)) * 25.0 * (18.0 * -(-37.0 - (30.0 + 56.0) - (-70.0 * -15.0 + -83.0 * 27.0))) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 1: reduce --77.0 * -(34.0 - (57.0 - (-90.0 + 13.0) * 60.0 * 58.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 2: reduce --((9.0 + -54.0) * 23.0) - -((-5.0 - 59.0) * (-77.0 - -71.0)) + -(76.0 * -24.0 * -28.0 * (--30.0 + 40.0 * 32.0)) + (--75.0 - -1.0) * (1.0 + --71.0 * (83.0 - 11.0) * 94.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 3: reduce (--94.0 - (-94.0 - -(-19.0 - -85.0 - (-100.0 - 51.0)))) * (42.0 * -59.0 - -58.0 + (-16.0 - 96.0 - 40.0 * -90.0) + -35.0 * -30.0 * (-70.0 - 29.0) * ((-71.0 + -9.0) * (24.0 * -66.0)) + ((-41.0 - 8.0 * -94.0) * (-19.0 * -88.0 - 96.0 * 29.0) + (42.0 - -54.0 - (89.0 + -90.0)) * (-65.0 * (99.0 + 74.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 4: reduce -8.0 * ((-(59.0 * (47.0 + -34.0)) + -83.0 * (23.0 - -25.0)) * ((81.0 - 11.0) * (-57.0 + -27.0) * --53.0) + (-50.0 + -84.0 * -7.0 * (74.0 * 87.0)) * -(-95.0 * -83.0 * -18.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 5: reduce 86.0 - (-47.0 + -41.0 + -25.0 + (-31.0 * -85.0 + -19.0) + -12.0) + 53.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 6: reduce --(7.0 - -(-88.0 + 40.0)) - -84.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 7: reduce 59.0 + (65.0 - 38.0 - 89.0 - (34.0 - -34.0) - -34.0 + (-(60.0 - 69.0) - 13.0 * -67.0 * -59.0) + -90.0 * (-82.0 - -(-34.0 * 52.0))) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 8: reduce --(-6.0 - -(81.0 * 86.0 * -71.0)) + -87.0 * -100.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 9: reduce -((-98.0 * -13.0 * 77.0 * (-20.0 - 2.0) - (-44.0 * 64.0 + -65.0)) * (-74.0 * 96.0 + -80.0 + -(-5.0 - 41.0)) * (-(18.0 + -19.0) + (-48.0 + 66.0 - 29.0) + (29.0 + -6.0 + (65.0 - 88.0) - (-98.0 - 92.0 + (52.0 - 45.0))))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 10: reduce 15.0 * (-(-7.0 + (78.0 - -67.0) - (47.0 - 43.0)) - -24.0 + -52.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 11: reduce (-69.0 + (--51.0 * (79.0 * 41.0 * -46.0 * (69.0 * 11.0)) - (74.0 - -53.0) * (-92.0 * 86.0 * --41.0))) * 42.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 12: reduce -46.0 * (((18.0 + (-19.0 - (46.0 - 44.0))) * (59.0 - 59.0 + --92.0) + (-3.0 + 43.0 - 74.0 * 99.0 - -22.0)) * -6.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 13: reduce 67.0 - (-24.0 + -9.0 + -26.0 + -53.0) + --24.0 * (--84.0 + -97.0 * -27.0) - -48.0 + (-35.0 + 26.0) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 14: reduce -70.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 15: reduce 4.0 * --(-(-29.0 + -66.0 * 25.0) * -(-25.0 - -32.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 16: reduce -(-33.0 + -90.0 * --87.0 * (-10.0 + -6.0 - -99.0 - 26.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 17: reduce -((-46.0 * 16.0 - 57.0 - -43.0 * -88.0 + --64.0) * ((-58.0 + -85.0 - -11.0 * -56.0) * (-51.0 - 14.0 + -18.0 * -37.0))) * (-52.0 - -87.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 18: reduce 51.0 * --((46.0 - -41.0) * -76.0 * (-38.0 - -7.0) + (15.0 + -18.0 * -11.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 19: reduce -(35.0 * -22.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 20: reduce -(((7.0 + 27.0) * -62.0 + (99.0 - 22.0)) * ((-22.0 - 43.0) * (94.0 - 91.0)) + -((59.0 - 68.0) * (-54.0 * 59.0)) - -(-59.0 * (-10.0 - -52.0) * 99.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 21: reduce --(10.0 * (-(55.0 * -39.0) + --33.0) * ((70.0 + 9.0) * 19.0 - (87.0 + 0.0 - 29.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 22: reduce (-39.0 + -72.0 - (--16.0 + 55.0 * -29.0) * (68.0 + 90.0 - 56.0)) * ((88.0 + 32.0 - --87.0 + -(-72.0 * 88.0)) * ---37.0) * (-(7.0 + -74.0) * ((-52.0 + 80.0) * -39.0 + (-1.0 + -18.0) * 35.0) + ((88.0 - 49.0) * -78.0 + 87.0) * (-82.0 - 49.0 * 96.0 - (54.0 + 56.0 - 44.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 23: reduce -(---64.0 + (-51.0 - -34.0 + 29.0 - --40.0 - -16.0 * (-33.0 + 9.0) - -(55.0 * (-15.0 - 36.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 24: reduce -(--59.0 * (1.0 * 53.0 + 14.0) + -(-74.0 + -45.0)) + 69.0 + -((91.0 - (-18.0 - 15.0) - (-94.0 + -36.0 - -3.0 * -47.0)) * (46.0 - -29.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 25: reduce -(21.0 + ((45.0 + -92.0 * 60.0) * -99.0 + -91.0) * (-(-20.0 + 39.0) - 72.0 * (4.0 + 42.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 26: reduce -9.0 * (-50.0 * 67.0 - (--83.0 - 22.0 - (-8.0 + 49.0) + 29.0)) - (-(---77.0 + (92.0 * -18.0 + -64.0)) + ---18.0 * (-52.0 * -22.0 + 21.0 * -23.0 + (4.0 + -55.0 - -94.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 27: reduce (-64.0 * (98.0 - (-8.0 + -92.0 - -100.0)) + (-5.0 + (1.0 + -55.0) * (-64.0 * 61.0) + (-40.0 * -28.0 - (-28.0 + 40.0 - 20.0 * -8.0)))) * 99.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 28: reduce --71.0 * 9.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 29: reduce ((-35.0 + 11.0 + -91.0 - 97.0) * -65.0 - 87.0) * (-(88.0 - (28.0 - -52.0)) - (-41.0 - -29.0)) * -(89.0 * (--80.0 + (-73.0 + -96.0)) * ---22.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 30: reduce (36.0 * (31.0 + -42.0) - ((-64.0 + -100.0) * (86.0 * 97.0) * (-32.0 + -98.0 - (-52.0 - 71.0)) + (--96.0 + (-39.0 - 69.0)) * (45.0 - -35.0 + --38.0))) * (-8.0 - -(-8.0 - -81.0 + 57.0 * -96.0) * (-(5.0 + -100.0) * ((-78.0 + -37.0) * (55.0 + 43.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 31: reduce --((-95.0 - (-61.0 - 15.0 - -80.0 - -66.0)) * -55.0) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 32: reduce ---32.0 - (-52.0 + -(---48.0 - -62.0) * (37.0 - -26.0 - (-89.0 - -11.0) + -(32.0 * 26.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 33: reduce --(-(-76.0 * 52.0) * (56.0 + -87.0 + -5.0 * 16.0)) * -(32.0 * -74.0 - -46.0 - -52.0 - (-24.0 * -29.0 - -48.0) * -71.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 34: reduce 3.0 + 59.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 35: reduce --80.0 - (-57.0 - -(-2.0 - -62.0)) + -(-11.0 + -80.0 * -17.0) - 24.0 + -(-(19.0 - -22.0) * (70.0 * -3.0 * --68.0) * --(44.0 + 55.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 36: reduce 53.0 * --54.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 37: reduce (-(77.0 + -69.0) * (14.0 - 72.0) + -88.0 * -29.0 * -87.0) * 92.0 * (-(-99.0 - -36.0 - -64.0) * (--79.0 * (--72.0 + (77.0 + -41.0)))) - (-10.0 + -34.0 * -82.0 - (-(-62.0 * 67.0) + (-75.0 * -14.0 - 52.0 * -76.0)) + (-(-71.0 - 2.0) + -(-74.0 - 73.0) - 22.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 38: reduce (-(-(-87.0 * -91.0) * (18.0 * 91.0)) - 30.0) * ((-89.0 - -43.0) * (-26.0 * (-72.0 - -64.0)) - -99.0 * -23.0) * ((-30.0 - (-6.0 - 63.0 - -92.0 * 59.0) + (-26.0 - 33.0 + 60.0 * -37.0) * (-80.0 + 94.0)) * (-100.0 - (47.0 - -90.0) + (-14.0 * (-25.0 + -30.0) - (-35.0 - 97.0 - (44.0 - 96.0))))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 39: reduce --65.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 40: reduce --(25.0 * (---12.0 + (62.0 + 11.0) - -50.0 * -57.0 * -70.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 41: reduce --17.0 (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 42: reduce -(--10.0 + (-34.0 - -16.0) * -14.0 + -80.0 * 91.0 * (-30.0 - 37.0) - (-57.0 * 49.0 - (-51.0 - 49.0) + (--76.0 + -69.0 * -60.0)) + -(97.0 - -31.0 - 44.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 43: reduce ((--66.0 + -33.0 + (-50.0 + -23.0)) * (38.0 + (92.0 - 77.0)) + 45.0) * 47.0 * (-15.0 + 13.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 44: reduce 40.0 - -90.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 45: reduce -91.0 * (-(-(48.0 * -10.0 + 18.0) + --11.0 * -16.0) * -43.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 46: reduce -((9.0 - (-35.0 * 89.0 * -97.0 - (4.0 - 32.0))) * (-78.0 - 77.0 - (17.0 + -44.0 - (82.0 - 90.0))) + (-2.0 * (-68.0 + -48.0 - (-74.0 + -3.0)) - ----18.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 47: reduce (-84.0 * 23.0 + 86.0 * -20.0 - (8.0 - -26.0) * (98.0 * 81.0) - (25.0 + 9.0 + 46.0 * 25.0 + --35.0 * (-46.0 - 85.0))) * -((-37.0 - 50.0) * (42.0 - -27.0) - -15.0) * 27.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 48: reduce -22.0 * ((-9.0 * 62.0 - -80.0) * (-35.0 + 56.0) * ((29.0 + -2.0) * --65.0)) + (-20.0 * --63.0 + -49.0 + -54.0) - (-(27.0 - 98.0) - ---65.0 + (-42.0 * (16.0 + -96.0) + -86.0)) * (-55.0 * 43.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 49: reduce --24.0 * 84.0 - (26.0 - 57.0) + (--6.0 - -12.0) + (42.0 + -21.0 + (83.0 - -93.0)) * (-23.0 * -67.0 * 89.0) - -60.0 - 87.0 * ((39.0 - -19.0) * (12.0 + 43.0) * (-69.0 - 27.0 + (-53.0 + -97.0)) + (-88.0 * 93.0 + --59.0 - (-15.0 * -45.0 + (-100.0 - -88.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 50: reduce (-(-24.0 + -55.0 + 3.0) + -18.0 * 7.0 * (-52.0 * -8.0) * --80.0 + (-57.0 * (18.0 * -84.0) + -(52.0 - 65.0) - -(-25.0 - -49.0))) * -(21.0 * 45.0 + (-61.0 + -11.0) - -(92.0 + 93.0) + -(51.0 + 76.0) * -20.0) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 51: reduce 80.0 + -31.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 52: reduce (-(-43.0 * -56.0 + -22.0) * (8.0 - (-31.0 + 93.0)) * ((-74.0 - 26.0) * -19.0 * (52.0 * (-88.0 + 97.0))) + --(44.0 + 78.0 - (5.0 + -68.0))) * 2.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 53: reduce -((-49.0 * 91.0 - -54.0 * -97.0 * -21.0) * --45.0 * -(45.0 + 69.0 - 11.0)) * ((-(--71.0 * (-2.0 - -90.0)) - -60.0 * (91.0 * -94.0 * (76.0 - -10.0))) * 62.0) (0.1pt)" time="0.002">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 54: reduce ---(-(-6.0 - -3.0) * (-30.0 - -91.0)) + (-22.0 - 9.0 * -68.0 + (88.0 + -1.0 + (26.0 - 13.0)) - --75.0 * (35.0 + (-85.0 - -25.0)) + (13.0 - 90.0 - (-1.0 - (--85.0 + 39.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 55: reduce -44.0 + (-99.0 - -15.0) * ((49.0 + -74.0 - -94.0 + 92.0 * 11.0 - -(80.0 + 6.0)) * (-90.0 * -58.0 * -(-40.0 * -66.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 56: reduce (-(9.0 + 82.0 - 16.0) * (-69.0 - 85.0 + (-32.0 - -5.0)) - --9.0 - -28.0) * --((-26.0 + 98.0) * (73.0 * -48.0) * -63.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 57: reduce 0.0 - (94.0 - 79.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 58: reduce -32.0 + ((77.0 * -37.0 + 88.0) * (92.0 - 64.0) - (-61.0 - (15.0 + 86.0)) - -(38.0 + 39.0 * -26.0) - (-77.0 - -(-78.0 - -55.0 + (63.0 - -38.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 59: reduce (-((-75.0 - 30.0 - -43.0) * -3.0) - (---46.0 - (--42.0 - --50.0))) * (-100.0 + ---44.0 + (95.0 - 49.0) * -11.0 * -(-34.0 + -26.0)) * (-36.0 + (-82.0 - -(-2.0 - -35.0)) + (-78.0 * -43.0 - (56.0 + 28.0 + -3.0 * -21.0) + -97.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 60: reduce (-(-28.0 - -90.0) * 59.0 + (-23.0 + -12.0 + 38.0) - 15.0) * -52.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 61: reduce -96.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 62: reduce -(-20.0 + 51.0 * ((61.0 - 72.0) * 3.0 + -40.0)) - (65.0 + 2.0 * -86.0 - -(39.0 * -7.0) + (95.0 - 53.0 + -36.0 * -42.0) * (--34.0 - -93.0)) * ((40.0 - 88.0 - 15.0 * -12.0) * (-62.0 + -54.0 + -35.0) + -(-33.0 * 57.0 * 62.0)) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 63: reduce -((9.0 * 0.0 * -32.0 * -78.0 + -68.0) * (-24.0 * -17.0 + -68.0 * -100.0 + (90.0 + -62.0 + --84.0)) * (----80.0 * -8.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 64: reduce ((--73.0 - 8.0) * ((-53.0 + -98.0) * (62.0 - -44.0)) - (--68.0 + --18.0 * -67.0)) * --7.0 - -4.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 65: reduce 97.0 + -9.0 + ((85.0 - 39.0 + -91.0) * -38.0 - (91.0 * 60.0 + -79.0)) + (-29.0 + 2.0) * --9.0 * (-87.0 - (65.0 + -32.0)) * -(-56.0 - -40.0) + (--66.0 * 11.0 * (92.0 + -96.0 - (12.0 - 68.0)) - (40.0 - ---31.0) + (31.0 - -(62.0 + -84.0)) * -54.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 66: reduce -(-97.0 * (-89.0 + (47.0 * 82.0 + 58.0 - -58.0) + -(87.0 - -57.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 67: reduce ---68.0 + -10.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 68: reduce -(--(--7.0 * 34.0 * -66.0) * ((38.0 + (58.0 - -56.0)) * (-23.0 * 48.0 - (-47.0 - -22.0)) * (-21.0 - 21.0 + 68.0 - (-51.0 - 85.0 - -3.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 69: reduce --87.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 70: reduce --100.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 71: reduce 89.0 - (-21.0 + -43.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 72: reduce 65.0 * (-3.0 - (-((-50.0 + 92.0) * 85.0) + (-22.0 - 96.0 + (8.0 + 12.0))) - (-34.0 * 99.0 - (-(60.0 * -67.0) - (-41.0 + 44.0) * (-10.0 * 93.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 73: reduce ((74.0 - -25.0 * 64.0) * (-30.0 * -49.0) - ---24.0 + ((81.0 + -87.0) * (-99.0 * -18.0) - 59.0) - (-78.0 + -4.0 + (97.0 - 46.0)) * (--5.0 - 4.0) * -(-29.0 + 8.0 - (38.0 + 33.0))) * (-96.0 - 56.0 * -34.0 + (16.0 - 94.0 - 72.0) + (71.0 * -83.0 - -16.0 * 44.0 - -17.0) - -(-2.0 - 22.0 * -59.0 - (-21.0 + (22.0 - 59.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 74: reduce -(-85.0 + (81.0 - (-(-82.0 * 99.0) - --11.0))) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 75: reduce -(---(-80.0 + -77.0) + -3.0) * 39.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 76: reduce (--91.0 * (-17.0 + 85.0) - -33.0 + -(-55.0 * -75.0 - -57.0 * 74.0)) * (--58.0 * (-54.0 - (6.0 - -44.0) + (72.0 - 20.0) * (-13.0 - -81.0))) + (--18.0 * -(49.0 + -93.0) - (--5.0 + --7.0) * -81.0 + --14.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 77: reduce -35.0 - (-27.0 + -(-14.0 + -99.0 + 33.0 - (-44.0 - -94.0))) - (--38.0 * -45.0 + 55.0 - -(-62.0 * -(88.0 + -22.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 78: reduce -(-(27.0 - 62.0 + 46.0) - -72.0) + ---(92.0 + 17.0) - -((-62.0 + --100.0) * (18.0 * 61.0 - -1.0) - -91.0 * (66.0 * -58.0) * (-57.0 + (62.0 + 36.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 79: reduce 20.0 + (-71.0 - (-83.0 + 10.0) - (43.0 + -50.0) - (77.0 + -32.0 - 90.0) + 88.0) + (90.0 - -68.0 - 31.0 * 64.0) * 35.0 * (-14.0 * (-16.0 - 56.0 - (97.0 - -88.0))) * -(72.0 - -(33.0 - 80.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 80: reduce -(((47.0 + -83.0) * 31.0 - -11.0 * -28.0 - ---26.0) * (13.0 + 34.0)) - (19.0 + -((22.0 * -36.0 - (-22.0 - 79.0)) * (--95.0 - (83.0 - -78.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 81: reduce 5.0 + (-56.0 - (82.0 - (-34.0 * -57.0 + 89.0) + 1.0 * -52.0 * (-1.0 + 32.0)) * ((-26.0 - (-3.0 - 85.0)) * -(-74.0 * 72.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 82: reduce (-(-55.0 * -1.0 - 91.0) - 74.0 + (--9.0 + -51.0 - (-8.0 - 52.0 * 5.0))) * (34.0 - (38.0 + 80.0) + -56.0 - ----59.0) + --(--46.0 * 39.0 + (-60.0 + 54.0) * (17.0 - -82.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 83: reduce (-(-10.0 + 27.0) + --84.0 - (47.0 + --92.0) - (38.0 - (41.0 - -3.0 + -81.0)) - --50.0) * (23.0 + (25.0 + -(13.0 + 55.0)) + 73.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 84: reduce -5.0 - --56.0 * ((-87.0 + 59.0 - 30.0 - -88.0 + 48.0 * 32.0 * -16.0) * (--35.0 + 94.0 + -2.0 * (-49.0 * 7.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 85: reduce 68.0 + (-(--29.0 + 80.0 - (17.0 - -71.0) + (-86.0 + (-99.0 - 59.0))) - ((35.0 + -71.0) * 56.0 - (---49.0 - -(97.0 - -35.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 86: reduce -5.0 - -10.0 (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 87: reduce -58.0 + (-94.0 + -(-35.0 + -39.0) * (-29.0 * -96.0)) + (36.0 - -79.0 * -63.0 * (-23.0 - -69.0) * (38.0 + 63.0 + 20.0)) - --((7.0 + -42.0) * -17.0 * --2.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 88: reduce -((-(10.0 + 35.0) - -82.0) * (--100.0 + --11.0)) - ((25.0 + --19.0) * (67.0 + -1.0 * 34.0) - (--43.0 - -80.0 * (-19.0 - -32.0))) - (95.0 + (75.0 - 14.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 89: reduce 84.0 - -((55.0 + (43.0 + -31.0 - 63.0 - (-14.0 + -33.0))) * ((-76.0 + -77.0) * (2.0 * 94.0 + (-95.0 - 5.0)))) (0.1pt)" time="0.001">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 90: reduce (51.0 - (-48.0 + (-78.0 - -99.0) + (--3.0 - -32.0) + (-29.0 + -70.0 + (31.0 - 23.0) - 38.0 * (98.0 + 52.0)))) * -(-((-77.0 - -16.0) * -6.0) + (--26.0 - -35.0 * -37.0) * -36.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 91: reduce (-90.0 * 18.0 * 54.0 + -43.0 * 95.0 - (24.0 + -27.0) * 64.0 + --5.0) * -(-62.0 * -76.0 + -40.0) + (-(-36.0 - -89.0 - (63.0 + 98.0) - -20.0 * (60.0 * 30.0)) - --44.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 92: reduce ((59.0 * 72.0 + 0.0 - -32.0 * -15.0 + -55.0) * (76.0 + 95.0 - -69.0 + (12.0 + -94.0)) - -35.0) * ((-35.0 + -44.0) * (-((-70.0 - 59.0) * (-96.0 + -55.0)) + (52.0 * -76.0 + 4.0 - -(17.0 + 63.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 93: reduce -((91.0 - -76.0 + 91.0 + -31.0) * (-17.0 + 78.0 - -4.0) - --(24.0 - -18.0) - -(-60.0 - 71.0 + (-64.0 + 50.0)) * ((99.0 + 95.0 + -98.0 * -44.0) * ((51.0 + -99.0) * (33.0 - -71.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 94: reduce -(-15.0 * (-(-14.0 * -97.0) - (-39.0 + 56.0)) - (--17.0 * -20.0 - (94.0 * 47.0 - -7.0))) + 37.0 * (44.0 * ((-17.0 + -75.0) * (-89.0 + -13.0)) * -36.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 95: reduce -((-24.0 - -(-45.0 + 37.0)) * (-11.0 + (-46.0 + 17.0)) * -(-55.0 - (-56.0 + 1.0))) + (-((-79.0 + -60.0) * (-87.0 * -64.0)) - (-77.0 * (9.0 + 2.0) - (8.0 - -32.0 - -59.0)) + (--93.0 - -(33.0 * -31.0) - (-18.0 * 27.0 * (17.0 * -47.0) - --69.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 96: reduce ---(10.0 - (--29.0 - -85.0) * (-42.0 - 92.0)) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 97: reduce (-52.0 - -19.0) * (11.0 + (38.0 * 51.0 - -88.0) * (51.0 + 98.0) + (--41.0 - (-78.0 - 26.0 - -43.0)) - (68.0 - -((-44.0 - 61.0) * -92.0))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 98: reduce -(-94.0 + (13.0 * -(--52.0 - -39.0) - -(-97.0 + -59.0 + (36.0 - 40.0)))) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="smallstep: random test 99: reduce -88.0 + (--47.0 + -57.0 - (-19.0 - -28.0) - -17.0 - --35.0) - (-42.0 - -30.0 + --60.0 - 29.0 - -57.0 * -20.0) (0.1pt)" time="0.0">
+                      
+                    </testcase><testcase classname="CalcTest" name="After completing the lab, please report how long you spent on it (1pt)" time="0.001">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>

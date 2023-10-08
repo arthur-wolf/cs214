@@ -1,0 +1,4 @@
+[debug] [find-hof-test] Classpath dependencies List()
+[debug] [find-hof-test] Dependencies from configurations List(find-hof)
+[debug] Bloop wrote the configuration of project 'find-hof-test' to '/Users/arthur/epfl/ba3/cs214/labs/find-hof/.bloop/find-hof-test.json'
+[success] Generated .bloop/find-hof-test.json

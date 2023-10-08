@@ -1,0 +1,705 @@
+2023.09.21 11:11:05 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.[0m
+sept. 21, 2023 11:11:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 21, 2023 11:11:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 21, 2023 11:11:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFOS: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.008s)
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFOS: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": << Empty Schema >>
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "1 - Create tables"
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "2 - Server discovery"
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+sept. 21, 2023 11:11:06 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.022s)
+2023.09.21 11:11:06 INFO  time: initialize in 0.32s[0m
+2023.09.21 11:11:07 WARN  Build server is not auto-connectable.[0m
+2023.09.21 11:14:54 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/cli/main.scala[0m
+2023.09.21 11:14:55 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/cli/main.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.21 11:14:56 INFO  time: code lens generation in 1.63s[0m
+2023.09.21 11:16:12 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/cs214/Entry.scala[0m
+2023.09.21 11:16:23 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/cli/main.scala[0m
+2023.09.21 11:19:17 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/cs214/Entry.scala[0m
+2023.09.21 11:28:38 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/playground.worksheet.sc[0m
+[31merror[39m: src/main/scala/playground.worksheet.sc:1:8: 
+Not found: find
+import find.cs214.open
+       ^^^^
+2023.09.21 11:28:39 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.27s[0m
+2023.09.21 11:28:43 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/playground.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.21 11:29:23 INFO  running '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/25/sm73v1fj2zd3yn5z3lmrmfcm0000gn/T/metals17071853692707921860/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.09.21 11:29:23 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/project/metals.sbt[0m
+2023.09.21 11:29:23 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find/project/project/metals.sbt[0m
+2023.09.21 11:29:23 INFO  skipping build import with status 'Started'[0m
+2023.09.21 11:29:23 INFO  [info] welcome to sbt 1.9.4 (Eclipse Adoptium Java 17.0.6)[0m
+2023.09.21 11:29:23 INFO  [info] loading settings for project find-build-build-build from metals.sbt ...[0m
+2023.09.21 11:29:25 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find/project/project/project[0m
+2023.09.21 11:29:25 INFO  [info] loading settings for project find-build-build from metals.sbt ...[0m
+2023.09.21 11:29:25 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find/project/project[0m
+2023.09.21 11:29:26 INFO  [success] Generated .bloop/find-build-build.json[0m
+2023.09.21 11:29:26 INFO  [success] Total time: 1 s, completed 21 sept. 2023, 11:29:27[0m
+2023.09.21 11:29:26 INFO  [info] loading settings for project find-build from metals.sbt,plugins.sbt ...[0m
+2023.09.21 11:29:26 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find/project[0m
+2023.09.21 11:29:28 INFO  [success] Generated .bloop/find-build.json[0m
+2023.09.21 11:29:28 INFO  [success] Total time: 1 s, completed 21 sept. 2023, 11:29:28[0m
+2023.09.21 11:29:28 INFO  [info] loading settings for project find from build.sbt ...[0m
+2023.09.21 11:29:28 INFO  [info] set current project to find (in build file:/Users/arthur/epfl/ba3/cs214/labs/find/)[0m
+2023.09.21 11:29:29 INFO  [success] Generated .bloop/find-test.json[0m
+2023.09.21 11:29:29 INFO  [success] Generated .bloop/find.json[0m
+2023.09.21 11:29:29 INFO  [success] Total time: 0 s, completed 21 sept. 2023, 11:29:29[0m
+2023.09.21 11:29:29 INFO  time: ran 'sbt bloopInstall' in 6.64s[0m
+2023.09.21 11:29:29 INFO  Attempting to connect to the build server...[0m
+2023.09.21 11:29:29 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.21 11:29:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.21 11:29:29 INFO  Attempting to connect to the build server...[0m
+2023.09.21 11:29:29 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.21 11:29:29 INFO  Attempting to connect to the build server...[0m
+2023.09.21 11:29:29 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.21 11:29:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.21 11:29:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.21 11:29:30 INFO  time: Connected to build server in 0.15s[0m
+2023.09.21 11:29:30 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.09.21 11:29:31 INFO  time: indexed workspace in 1.8s[0m
+2023.09.21 11:29:31 INFO  compiling find (7 scala sources)[0m
+2023.09.21 11:29:33 INFO  compiling find-test (1 scala source)[0m
+2023.09.21 11:29:33 INFO  time: compiled find in 1.58s[0m
+2023.09.21 11:29:33 INFO  time: compiled find-test in 0.47s[0m
+2023.09.21 11:29:33 INFO  time: code lens generation in 1.65s[0m
+2023.09.21 11:29:35 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.85s[0m
+2023.09.21 11:30:59 INFO  Shutting down server[0m
+2023.09.21 11:30:59 INFO  shutting down Metals[0m
+2023.09.21 11:30:59 INFO  Shut down connection with build server.[0m
+2023.09.21 11:30:59 INFO  Shut down connection with build server.[0m
+2023.09.21 11:30:59 INFO  Shut down connection with build server.[0m
+2023.09.21 11:30:59 INFO  Exiting server[0m
+2023.09.21 11:30:59 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2023.09.22 11:21:39 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.[0m
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.010s)
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 22, 2023 11:21:39 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.22 11:21:39 INFO  time: initialize in 0.31s[0m
+2023.09.22 11:21:40 INFO  Attempting to connect to the build server...[0m
+sept. 22, 2023 11:21:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2
+2023.09.22 11:21:40 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.22 11:21:40 INFO  skipping build import with status 'Installed'[0m
+2023.09.22 11:21:42 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.22 11:21:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.22 11:21:42 INFO  Attempting to connect to the build server...[0m
+2023.09.22 11:21:42 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.22 11:21:42 INFO  Attempting to connect to the build server...[0m
+2023.09.22 11:21:42 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.22 11:21:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.22 11:21:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.22 11:21:42 INFO  time: Connected to build server in 1.93s[0m
+2023.09.22 11:21:42 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.09.22 11:21:43 INFO  time: Imported build in 0.26s[0m
+2023.09.22 11:21:43 INFO  time: code lens generation in 2.72s[0m
+2023.09.22 11:21:44 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.22 11:21:44 INFO  time: code lens generation in 3.1s[0m
+2023.09.22 11:21:45 INFO  time: indexed workspace in 2.1s[0m
+sept. 22, 2023 11:26:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 366
+2023.09.22 11:29:36 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:29:37 INFO  time: compiled find in 1.34s[0m
+2023.09.22 11:29:37 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:29:37 INFO  time: compiled find in 0.32s[0m
+2023.09.22 11:29:49 WARN  Using indexes to guess the definition of isFile[0m
+2023.09.22 11:29:49 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:29:49 WARN  Using indexes to guess the definition of isFile[0m
+2023.09.22 11:29:49 INFO  time: compiled find in 0.29s[0m
+2023.09.22 11:30:51 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:30:51 INFO  time: compiled find in 0.21s[0m
+2023.09.22 11:31:08 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:31:08 INFO  time: compiled find in 0.2s[0m
+2023.09.22 11:31:17 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:31:17 INFO  time: compiled find in 0.16s[0m
+2023.09.22 11:32:34 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:32:34 INFO  time: compiled find in 0.17s[0m
+2023.09.22 11:32:44 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:32:44 INFO  time: compiled find in 0.17s[0m
+2023.09.22 11:33:51 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:33:51 INFO  time: compiled find in 0.18s[0m
+2023.09.22 11:36:03 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:36:03 INFO  time: compiled find in 0.17s[0m
+2023.09.22 11:36:11 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:36:11 INFO  time: compiled find in 0.13s[0m
+2023.09.22 11:36:16 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:36:16 INFO  time: compiled find in 0.5s[0m
+2023.09.22 11:37:41 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:37:41 INFO  time: compiled find in 0.14s[0m
+2023.09.22 11:37:45 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:37:45 INFO  time: compiled find in 0.1s[0m
+2023.09.22 11:38:23 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:38:23 INFO  time: compiled find in 0.15s[0m
+2023.09.22 11:38:31 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:38:31 INFO  time: compiled find in 0.11s[0m
+2023.09.22 11:38:48 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:38:48 INFO  time: compiled find in 0.1s[0m
+2023.09.22 11:39:15 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:39:15 INFO  time: compiled find in 96ms[0m
+2023.09.22 11:40:11 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:40:11 INFO  time: compiled find in 76ms[0m
+2023.09.22 11:44:57 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.82s[0m
+2023.09.22 11:51:45 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:51:45 INFO  time: compiled find in 77ms[0m
+2023.09.22 11:52:46 INFO  compiling find (1 scala source)[0m
+2023.09.22 11:52:46 INFO  time: compiled find in 70ms[0m
+2023.09.22 11:52:51 INFO  Shutting down server[0m
+2023.09.22 11:52:51 INFO  shutting down Metals[0m
+2023.09.22 11:52:51 INFO  Shut down connection with build server.[0m
+2023.09.22 11:52:51 INFO  Shut down connection with build server.[0m
+2023.09.22 11:52:51 INFO  Shut down connection with build server.[0m
+2023.09.22 11:52:51 INFO  Exiting server[0m
+2023.09.22 14:05:40 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.011s)
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 22, 2023 2:05:40 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.22 14:05:40 INFO  time: initialize in 0.37s
+2023.09.22 14:05:41 INFO  Attempting to connect to the build server...
+2023.09.22 14:05:41 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.22 14:05:41 INFO  skipping build import with status 'Installed'
+2023.09.22 14:05:43 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.22 14:05:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.22 14:05:43 INFO  Attempting to connect to the build server...
+2023.09.22 14:05:43 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.22 14:05:43 INFO  Attempting to connect to the build server...
+2023.09.22 14:05:43 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.22 14:05:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.22 14:05:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.22 14:05:43 INFO  time: Connected to build server in 2.19s
+2023.09.22 14:05:43 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.22 14:05:45 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.22 14:05:45 INFO  time: code lens generation in 2.33s
+2023.09.22 14:05:46 INFO  time: indexed workspace in 2.51s
+2023.09.23 12:39:10 INFO  Shutting down server
+2023.09.23 12:39:10 INFO  shutting down Metals
+2023.09.23 12:39:10 INFO  Shut down connection with build server.
+2023.09.23 12:39:10 INFO  Shut down connection with build server.
+2023.09.23 12:39:10 INFO  Shut down connection with build server.
+2023.09.23 12:39:10 INFO  Exiting server
+2023.09.23 14:33:33 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.[0m
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.008s)
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 23, 2023 2:33:33 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.23 14:33:33 INFO  time: initialize in 0.32s[0m
+2023.09.23 14:33:34 INFO  Attempting to connect to the build server...[0m
+2023.09.23 14:33:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.23 14:33:34 INFO  skipping build import with status 'Installed'[0m
+2023.09.23 14:33:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.23 14:33:34 INFO  Attempting to connect to the build server...[0m
+2023.09.23 14:33:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.23 14:33:34 INFO  Attempting to connect to the build server...[0m
+2023.09.23 14:33:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.23 14:33:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.23 14:33:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.23 14:33:34 INFO  time: Connected to build server in 0.3s[0m
+2023.09.23 14:33:34 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.09.23 14:33:36 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.23 14:33:36 INFO  time: code lens generation in 1.57s[0m
+2023.09.23 14:33:36 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.23 14:33:36 INFO  time: code lens generation in 2.56s[0m
+2023.09.23 14:33:38 INFO  time: indexed workspace in 2.62s[0m
+2023.09.23 14:44:55 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:44:57 INFO  time: compiled find in 1.26s[0m
+2023.09.23 14:45:00 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:45:00 INFO  time: compiled find in 60ms[0m
+sept. 23, 2023 2:45:01 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /Users/arthur/epfl/ba3/cs214/labs/find/.metals/.reports/metals-full/2023-09-23/r_compiler-error_14-45-01-066
+sept. 23, 2023 2:45:01 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /Users/arthur/epfl/ba3/cs214/labs/find/.metals/.reports/metals-full/2023-09-23/r_compiler-error_14-45-01-250
+sept. 23, 2023 2:45:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 87
+2023.09.23 14:45:19 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:45:19 INFO  time: compiled find in 67ms[0m
+2023.09.23 14:45:22 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:45:22 INFO  time: compiled find in 58ms[0m
+2023.09.23 14:50:32 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:50:32 INFO  time: compiled find in 0.24s[0m
+2023.09.23 14:50:46 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:50:46 INFO  time: compiled find in 0.49s[0m
+2023.09.23 14:50:54 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:50:54 INFO  time: compiled find in 0.14s[0m
+2023.09.23 14:51:02 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:02 INFO  time: compiled find in 0.12s[0m
+2023.09.23 14:51:02 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:02 INFO  time: compiled find in 0.11s[0m
+2023.09.23 14:51:12 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:12 INFO  time: compiled find in 0.13s[0m
+2023.09.23 14:51:14 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:14 INFO  time: compiled find in 0.1s[0m
+2023.09.23 14:51:19 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:19 INFO  time: compiled find in 0.11s[0m
+2023.09.23 14:51:31 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:51:31 INFO  time: compiled find in 93ms[0m
+2023.09.23 14:52:29 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:52:29 INFO  time: compiled find in 0.17s[0m
+2023.09.23 14:53:50 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:53:50 INFO  time: compiled find in 0.19s[0m
+2023.09.23 14:53:59 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:53:59 INFO  time: compiled find in 64ms[0m
+2023.09.23 14:54:28 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:54:28 INFO  time: compiled find in 49ms[0m
+2023.09.23 14:54:28 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:54:28 INFO  time: compiled find in 46ms[0m
+2023.09.23 14:54:40 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:54:40 INFO  time: compiled find in 0.15s[0m
+2023.09.23 14:54:46 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:54:46 INFO  time: compiled find in 58ms[0m
+sept. 23, 2023 2:54:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 752
+2023.09.23 14:54:50 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:54:50 INFO  time: compiled find in 59ms[0m
+2023.09.23 14:55:18 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:55:18 INFO  time: compiled find in 60ms[0m
+2023.09.23 14:55:28 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:55:28 INFO  time: compiled find in 59ms[0m
+2023.09.23 14:55:30 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:55:30 INFO  time: compiled find in 64ms[0m
+2023.09.23 14:57:14 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:57:14 INFO  time: compiled find in 82ms[0m
+2023.09.23 14:57:27 INFO  compiling find (1 scala source)[0m
+2023.09.23 14:57:27 INFO  time: compiled find in 82ms[0m
+2023.09.23 15:01:16 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:01:16 INFO  time: compiled find in 94ms[0m
+2023.09.23 15:01:21 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:01:21 INFO  time: compiled find in 79ms[0m
+sept. 23, 2023 3:04:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+sept. 23, 2023 3:11:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1368
+2023.09.23 15:11:41 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:11:41 INFO  time: compiled find in 57ms[0m
+2023.09.23 15:12:22 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:12:22 INFO  time: compiled find in 63ms[0m
+2023.09.23 15:12:27 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:12:27 INFO  time: compiled find in 83ms[0m
+2023.09.23 15:15:05 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:15:05 INFO  time: compiled find in 82ms[0m
+2023.09.23 15:15:26 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:15:26 INFO  time: compiled find in 0.1s[0m
+2023.09.23 15:17:04 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:17:04 INFO  time: compiled find in 82ms[0m
+2023.09.23 15:19:47 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.88s[0m
+2023.09.23 15:20:12 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.3s[0m
+sept. 23, 2023 3:20:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1752
+2023.09.23 15:20:43 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:20:43 INFO  time: compiled find in 82ms[0m
+2023.09.23 15:21:00 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.28s[0m
+2023.09.23 15:21:02 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.2s[0m
+[31merror[39m: src/main/scala/playground.worksheet.sc:18:17: 
+Not found: test
+findAllAndPrint(test)
+                ^^^^
+2023.09.23 15:22:10 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.13s[0m
+2023.09.23 15:22:36 INFO  compiling find (1 scala source)[0m
+2023.09.23 15:22:36 INFO  time: compiled find in 84ms[0m
+[31merror[39m: src/main/scala/playground.worksheet.sc:18:17: 
+Not found: test
+findAllAndPrint(test)
+                ^^^^
+2023.09.23 15:29:13 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 93ms[0m
+sept. 23, 2023 3:29:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2705)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:677)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:57)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:53)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:52)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+sept. 23, 2023 3:29:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 223, end 239, length 225
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2705)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:677)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:57)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:53)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:52)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.09.23 15:29:20 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.22s[0m
+sept. 23, 2023 4:23:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2023.09.23 18:10:27 INFO  Shutting down server[0m
+2023.09.23 18:10:27 INFO  shutting down Metals[0m
+2023.09.23 18:10:27 INFO  Shut down connection with build server.[0m
+2023.09.23 18:10:27 INFO  Shut down connection with build server.[0m
+2023.09.23 18:10:27 INFO  Shut down connection with build server.[0m
+2023.09.23 18:10:27 INFO  Exiting server[0m
+2023.09.24 09:37:12 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.013s)
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 24, 2023 9:37:13 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.24 09:37:13 INFO  time: initialize in 0.36s
+2023.09.24 09:37:14 INFO  Attempting to connect to the build server...
+2023.09.24 09:37:14 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.24 09:37:14 INFO  skipping build import with status 'Installed'
+sept. 24, 2023 9:37:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5
+2023.09.24 09:37:16 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.24 09:37:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.24 09:37:16 INFO  Attempting to connect to the build server...
+2023.09.24 09:37:16 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.24 09:37:16 INFO  Attempting to connect to the build server...
+2023.09.24 09:37:16 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.09.24 09:37:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.24 09:37:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.09.24 09:37:16 INFO  time: Connected to build server in 2.07s
+2023.09.24 09:37:16 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.24 09:37:16 INFO  time: Imported build in 0.1s
+2023.09.24 09:37:16 INFO  time: code lens generation in 2.52s
+2023.09.24 09:37:17 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.24 09:37:17 INFO  time: code lens generation in 3.01s
+2023.09.24 09:37:18 INFO  time: indexed workspace in 1.93s
+sept. 24, 2023 9:37:35 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+sept. 24, 2023 9:37:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+sept. 24, 2023 9:37:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2023.09.24 09:38:49 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.87s
+2023.09.24 09:40:34 INFO  compiling find (1 scala source)
+2023.09.24 09:40:36 INFO  time: compiled find in 1.32s
+2023.09.24 09:40:44 INFO  compiling find (1 scala source)
+2023.09.24 09:40:44 INFO  time: compiled find in 0.21s
+2023.09.24 09:40:49 INFO  compiling find (1 scala source)
+2023.09.24 09:40:49 INFO  time: compiled find in 0.18s
+2023.09.24 09:40:55 INFO  compiling find (1 scala source)
+2023.09.24 09:40:55 INFO  time: compiled find in 0.17s
+2023.09.24 09:41:51 INFO  compiling find (1 scala source)
+2023.09.24 09:41:51 INFO  time: compiled find in 0.12s
+2023.09.24 09:41:59 INFO  compiling find (1 scala source)
+2023.09.24 09:41:59 INFO  time: compiled find in 0.13s
+2023.09.24 09:42:59 INFO  compiling find (1 scala source)
+2023.09.24 09:42:59 INFO  time: compiled find in 39ms
+2023.09.24 09:43:01 INFO  compiling find (1 scala source)
+2023.09.24 09:43:01 INFO  time: compiled find in 99ms
+sept. 24, 2023 9:45:03 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2023.09.24 09:54:16 INFO  compiling find-test (1 scala source)
+2023.09.24 09:54:16 INFO  time: compiled find-test in 0.48s
+2023.09.24 09:54:36 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.37s
+2023.09.24 09:54:53 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.24s
+2023.09.24 09:55:07 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.2s
+2023.09.24 09:55:12 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.18s
+2023.09.24 09:55:14 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.24s
+2023.09.24 09:55:17 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.16s
+2023.09.24 09:55:17 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.13s
+2023.09.24 09:55:17 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.14s
+2023.09.24 09:55:17 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.16s
+2023.09.24 09:55:43 INFO  compiling find (1 scala source)
+2023.09.24 09:55:43 INFO  time: compiled find in 94ms
+2023.09.24 09:56:15 INFO  compiling find (1 scala source)
+2023.09.24 09:56:15 INFO  time: compiled find in 79ms
+sept. 24, 2023 9:57:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 545
+2023.09.24 09:58:03 INFO  compiling find (1 scala source)
+2023.09.24 09:58:03 INFO  time: compiled find in 78ms
+2023.09.24 10:05:21 INFO  compiling find (1 scala source)
+2023.09.24 10:05:21 INFO  time: compiled find in 47ms
+2023.09.24 10:05:42 INFO  compiling find (1 scala source)
+2023.09.24 10:05:42 INFO  time: compiled find in 42ms
+sept. 24, 2023 10:05:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 719
+2023.09.24 10:06:22 INFO  compiling find (1 scala source)
+2023.09.24 10:06:22 INFO  time: compiled find in 41ms
+2023.09.24 10:06:36 INFO  compiling find (1 scala source)
+2023.09.24 10:06:36 INFO  time: compiled find in 40ms
+2023.09.24 10:06:44 INFO  compiling find (1 scala source)
+2023.09.24 10:06:44 INFO  time: compiled find in 35ms
+2023.09.24 10:06:50 INFO  compiling find (1 scala source)
+2023.09.24 10:06:50 INFO  time: compiled find in 85ms
+2023.09.24 10:07:26 INFO  compiling find (1 scala source)
+2023.09.24 10:07:26 INFO  time: compiled find in 42ms
+2023.09.24 10:07:31 INFO  compiling find (1 scala source)
+2023.09.24 10:07:31 INFO  time: compiled find in 41ms
+2023.09.24 10:07:38 INFO  compiling find (1 scala source)
+2023.09.24 10:07:38 INFO  time: compiled find in 38ms
+2023.09.24 10:07:44 INFO  compiling find (1 scala source)
+2023.09.24 10:07:44 INFO  time: compiled find in 38ms
+2023.09.24 10:08:02 INFO  compiling find (1 scala source)
+2023.09.24 10:08:02 INFO  time: compiled find in 0.12s
+2023.09.24 10:08:09 INFO  compiling find (1 scala source)
+2023.09.24 10:08:09 INFO  time: compiled find in 0.1s
+2023.09.24 10:09:31 INFO  compiling find (1 scala source)
+2023.09.24 10:09:31 INFO  time: compiled find in 0.11s
+2023.09.24 10:11:30 INFO  compiling find (1 scala source)
+2023.09.24 10:11:30 INFO  time: compiled find in 60ms
+2023.09.24 10:11:39 INFO  compiling find (1 scala source)
+2023.09.24 10:11:39 INFO  time: compiled find in 50ms
+2023.09.24 10:11:48 INFO  compiling find (1 scala source)
+2023.09.24 10:11:48 INFO  time: compiled find in 55ms
+2023.09.24 10:11:51 INFO  compiling find (1 scala source)
+2023.09.24 10:11:51 INFO  time: compiled find in 45ms
+2023.09.24 10:11:57 INFO  compiling find (1 scala source)
+2023.09.24 10:11:57 INFO  time: compiled find in 51ms
+2023.09.24 10:12:24 INFO  compiling find (1 scala source)
+2023.09.24 10:12:24 INFO  time: compiled find in 46ms
+2023.09.24 10:12:24 INFO  compiling find (1 scala source)
+2023.09.24 10:12:24 INFO  time: compiled find in 48ms
+2023.09.24 10:12:24 INFO  compiling find (1 scala source)
+2023.09.24 10:12:25 INFO  time: compiled find in 50ms
+2023.09.24 10:12:25 INFO  compiling find (1 scala source)
+2023.09.24 10:12:25 INFO  time: compiled find in 44ms
+2023.09.24 10:12:31 INFO  compiling find (1 scala source)
+2023.09.24 10:12:31 INFO  time: compiled find in 47ms
+2023.09.24 10:12:47 INFO  compiling find (1 scala source)
+2023.09.24 10:12:47 INFO  time: compiled find in 0.1s
+2023.09.24 10:14:08 INFO  compiling find (1 scala source)
+2023.09.24 10:14:08 INFO  time: compiled find in 80ms
+2023.09.24 10:14:14 INFO  compiling find (1 scala source)
+2023.09.24 10:14:14 INFO  time: compiled find in 83ms
+2023.09.24 10:15:17 INFO  compiling find (1 scala source)
+2023.09.24 10:15:17 INFO  time: compiled find in 70ms
+2023.09.24 10:15:31 INFO  compiling find (1 scala source)
+2023.09.24 10:15:31 INFO  time: compiled find in 71ms
+2023.09.24 10:16:29 INFO  compiling find (1 scala source)
+2023.09.24 10:16:29 INFO  time: compiled find in 72ms
+2023.09.24 10:16:32 INFO  compiling find (1 scala source)
+2023.09.24 10:16:32 INFO  time: compiled find in 75ms
+2023.09.24 10:18:44 INFO  compiling find (1 scala source)
+2023.09.24 10:18:44 INFO  time: compiled find in 67ms
+2023.09.24 10:19:59 INFO  compiling find (1 scala source)
+2023.09.24 10:19:59 INFO  time: compiled find in 68ms
+2023.09.24 10:29:57 INFO  compiling find (1 scala source)
+2023.09.24 10:29:57 INFO  time: compiled find in 66ms
+2023.09.24 11:23:02 INFO  compiling find (1 scala source)
+2023.09.24 11:23:02 INFO  time: compiled find in 63ms
+2023.09.24 11:23:12 INFO  compiling find (1 scala source)
+2023.09.24 11:23:12 INFO  time: compiled find in 62ms
+2023.09.24 14:39:52 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.18s
+2023.09.24 14:40:08 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.15s
+2023.09.24 14:44:33 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.14s
+2023.09.24 14:45:00 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.14s
+2023.09.24 14:47:28 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.14s
+2023.09.24 14:48:56 INFO  compiling find (1 scala source)
+2023.09.24 14:48:56 INFO  time: compiled find in 63ms
+2023.09.24 14:49:01 INFO  compiling find (1 scala source)
+2023.09.24 14:49:01 INFO  time: compiled find in 63ms
+2023.09.24 15:02:21 INFO  compiling find (1 scala source)
+2023.09.24 15:02:21 INFO  time: compiled find in 87ms
+2023.09.24 15:04:23 INFO  compiling find (1 scala source)
+2023.09.24 15:04:23 INFO  time: compiled find in 48ms
+sept. 24, 2023 3:04:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2498
+2023.09.24 15:04:40 INFO  compiling find (1 scala source)
+2023.09.24 15:04:40 INFO  time: compiled find in 65ms
+2023.09.24 15:05:48 INFO  compiling find (1 scala source)
+2023.09.24 15:05:48 INFO  time: compiled find in 66ms
+2023.09.24 15:07:02 INFO  compiling find (1 scala source)
+2023.09.24 15:07:02 INFO  time: compiled find in 63ms
+sept. 24, 2023 3:08:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2023.09.24 15:16:48 INFO  compiling find-test (1 scala source)
+2023.09.24 15:16:48 INFO  time: compiled find-test in 0.16s
+2023.09.24 15:16:58 INFO  compiling find (1 scala source)
+2023.09.24 15:16:58 INFO  time: compiled find in 69ms
+2023.09.24 15:17:13 INFO  compiling find (1 scala source)
+2023.09.24 15:17:13 INFO  time: compiled find in 66ms
+2023.09.24 15:17:38 INFO  compiling find (1 scala source)
+2023.09.24 15:17:38 INFO  time: compiled find in 58ms
+2023.09.24 15:17:57 INFO  compiling find (1 scala source)
+2023.09.24 15:17:57 INFO  time: compiled find in 60ms
+2023.09.24 15:18:01 INFO  compiling find-test (1 scala source)
+2023.09.24 15:18:01 INFO  time: compiled find-test in 0.14s
+2023.09.24 15:18:05 INFO  Deduplicating compilation of find from bsp client 'Metals 1.0.1' (since 5h 40m 48.543s)
+2023.09.25 11:19:10 INFO  Shutting down server
+2023.09.25 11:19:10 INFO  shutting down Metals
+2023.09.25 11:19:10 INFO  Shut down connection with build server.
+2023.09.25 11:19:10 INFO  Shut down connection with build server.
+2023.09.25 11:19:10 INFO  Shut down connection with build server.
+2023.09.25 11:19:10 INFO  Exiting server
+2023.09.25 12:16:23 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.[0m
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.010s)
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 25, 2023 12:16:23 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.25 12:16:23 INFO  time: initialize in 0.38s[0m
+2023.09.25 12:16:25 INFO  Attempting to connect to the build server...[0m
+2023.09.25 12:16:25 INFO  skipping build import with status 'Installed'[0m
+2023.09.25 12:16:25 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.25 12:16:27 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.25 12:16:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.25 12:16:27 INFO  Attempting to connect to the build server...[0m
+2023.09.25 12:16:27 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.25 12:16:27 INFO  Attempting to connect to the build server...[0m
+2023.09.25 12:16:27 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.25 12:16:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.25 12:16:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.25 12:16:27 INFO  time: Connected to build server in 2.35s[0m
+2023.09.25 12:16:27 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.09.25 12:16:28 INFO  time: code lens generation in 2.83s[0m
+2023.09.25 12:16:29 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.25 12:16:29 INFO  time: code lens generation in 3.2s[0m
+2023.09.25 12:16:29 INFO  time: indexed workspace in 2.07s[0m
+2023.09.25 12:19:11 INFO  Shutting down server[0m
+2023.09.25 12:19:11 INFO  shutting down Metals[0m
+2023.09.25 12:19:11 INFO  Shut down connection with build server.[0m
+2023.09.25 12:19:11 INFO  Shut down connection with build server.[0m
+2023.09.25 12:19:11 INFO  Shut down connection with build server.[0m
+2023.09.25 12:19:11 INFO  Exiting server[0m
+2023.09.26 08:06:46 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find' for client Visual Studio Code 1.82.2.[0m
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find/.metals/metals (H2 2.1)
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.008s)
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+sept. 26, 2023 8:06:46 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.26 08:06:46 INFO  time: initialize in 0.29s[0m
+2023.09.26 08:06:47 INFO  Attempting to connect to the build server...[0m
+2023.09.26 08:06:47 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.26 08:06:47 INFO  skipping build import with status 'Installed'[0m
+2023.09.26 08:06:48 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+sept. 26, 2023 8:06:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2
+sept. 26, 2023 8:06:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6
+2023.09.26 08:06:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.26 08:06:49 INFO  Attempting to connect to the build server...[0m
+2023.09.26 08:06:49 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.26 08:06:49 INFO  Attempting to connect to the build server...[0m
+2023.09.26 08:06:49 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.09.26 08:06:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.26 08:06:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.09.26 08:06:49 INFO  time: Connected to build server in 2.08s[0m
+2023.09.26 08:06:49 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.09.26 08:06:50 INFO  time: code lens generation in 1.19s[0m
+2023.09.26 08:06:50 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find/src/main/scala/find/find.scala. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.09.26 08:06:50 INFO  time: code lens generation in 1.95s[0m
+2023.09.26 08:06:51 INFO  time: indexed workspace in 1.94s[0m
+2023.09.26 08:07:42 INFO  compiling find (1 scala source)[0m
+2023.09.26 08:07:43 INFO  time: compiled find in 1.33s[0m
+2023.09.26 08:07:44 INFO  Shutting down server[0m
+2023.09.26 08:07:44 INFO  shutting down Metals[0m
+2023.09.26 08:07:44 INFO  Shut down connection with build server.[0m
+2023.09.26 08:07:44 INFO  Shut down connection with build server.[0m
+2023.09.26 08:07:44 INFO  Shut down connection with build server.[0m
+2023.09.26 08:07:44 INFO  Exiting server[0m

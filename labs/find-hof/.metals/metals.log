@@ -1,0 +1,152 @@
+2023.10.05 10:30:08 INFO  Started: Metals version 1.0.1 in folders '/Users/arthur/epfl/ba3/cs214/labs/find-hof' for client Visual Studio Code 1.82.3.[0m
+oct. 05, 2023 10:30:08 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.21.2 by Redgate
+oct. 05, 2023 10:30:08 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+oct. 05, 2023 10:30:08 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.FlywayExecutor execute
+INFOS: Database: jdbc:h2:file:/Users/arthur/epfl/ba3/cs214/labs/find-hof/.metals/metals (H2 2.1)
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFOS: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.005s)
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFOS: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": << Empty Schema >>
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "1 - Create tables"
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "2 - Server discovery"
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFOS: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+oct. 05, 2023 10:30:09 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.011s)
+2023.10.05 10:30:09 INFO  time: initialize in 0.27s[0m
+2023.10.05 10:30:10 WARN  Build server is not auto-connectable.[0m
+2023.10.05 10:30:11 INFO  running '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/25/sm73v1fj2zd3yn5z3lmrmfcm0000gn/T/metals13179320076867133189/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.10.05 10:30:11 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/project/metals.sbt[0m
+2023.10.05 10:30:11 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/metals.sbt[0m
+2023.10.05 10:30:11 INFO  skipping build import with status 'Started'[0m
+2023.10.05 10:30:12 INFO  [info] welcome to sbt 1.9.4 (Eclipse Adoptium Java 17.0.6)[0m
+2023.10.05 10:30:13 INFO  [info] loading settings for project find-hof-build-build-build from metals.sbt ...[0m
+2023.10.05 10:30:13 INFO  no build target found for /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.0[0m
+2023.10.05 10:30:13 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/project/project[0m
+2023.10.05 10:30:14 INFO  [info] loading settings for project find-hof-build-build from metals.sbt ...[0m
+2023.10.05 10:30:14 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/project[0m
+2023.10.05 10:30:15 WARN  no build target for: /Users/arthur/epfl/ba3/cs214/labs/find-hof/src/main/scala/find/find.scala[0m
+2023.10.05 10:30:15 INFO  [success] Generated .bloop/find-hof-build-build.json[0m
+2023.10.05 10:30:15 INFO  [success] Total time: 1 s, completed 5 oct. 2023, 10:30:15[0m
+2023.10.05 10:30:15 INFO  [info] loading settings for project find-hof-build from metals.sbt,plugins.sbt ...[0m
+2023.10.05 10:30:15 INFO  [info] loading project definition from /Users/arthur/epfl/ba3/cs214/labs/find-hof/project[0m
+2023.10.05 10:30:16 INFO  [success] Generated .bloop/find-hof-build.json[0m
+2023.10.05 10:30:16 INFO  [success] Total time: 1 s, completed 5 oct. 2023, 10:30:16[0m
+2023.10.05 10:30:16 INFO  [info] loading settings for project find-hof from build.sbt ...[0m
+2023.10.05 10:30:16 INFO  [info] set current project to find-hof (in build file:/Users/arthur/epfl/ba3/cs214/labs/find-hof/)[0m
+2023.10.05 10:30:30 INFO  [success] Generated .bloop/find-hof-test.json[0m
+2023.10.05 10:30:30 INFO  [success] Generated .bloop/find-hof.json[0m
+2023.10.05 10:30:30 INFO  [success] Total time: 13 s, completed 5 oct. 2023, 10:30:30[0m
+2023.10.05 10:30:30 INFO  time: ran 'sbt bloopInstall' in 18s[0m
+2023.10.05 10:30:30 INFO  Attempting to connect to the build server...[0m
+2023.10.05 10:30:30 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.10.05 10:30:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find-hof/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.10.05 10:30:30 INFO  Attempting to connect to the build server...[0m
+2023.10.05 10:30:30 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.10.05 10:30:30 INFO  Attempting to connect to the build server...[0m
+2023.10.05 10:30:30 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json[0m
+2023.10.05 10:30:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.10.05 10:30:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/find-hof/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.10.05 10:30:30 INFO  time: Connected to build server in 0.17s[0m
+2023.10.05 10:30:30 INFO  Connected to Build server: Bloop v1.5.8[0m
+2023.10.05 10:30:32 INFO  time: indexed workspace in 2.32s[0m
+2023.10.05 10:30:32 INFO  compiling find-hof (7 scala sources)[0m
+2023.10.05 10:30:35 INFO  compiling find-hof-test (3 scala sources)[0m
+2023.10.05 10:30:35 INFO  time: compiled find-hof in 2.96s[0m
+2023.10.05 10:30:35 INFO  time: compiled find-hof-test in 0.87s[0m
+oct. 05, 2023 10:32:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 129
+oct. 05, 2023 10:32:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 193
+2023.10.05 10:32:53 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:32:53 INFO  time: compiled find-hof in 0.25s[0m
+2023.10.05 10:33:53 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:33:53 INFO  time: compiled find-hof in 0.13s[0m
+2023.10.05 10:34:11 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:11 INFO  time: compiled find-hof in 82ms[0m
+2023.10.05 10:34:20 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:20 INFO  time: compiled find-hof in 0.11s[0m
+2023.10.05 10:34:38 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:38 INFO  time: compiled find-hof in 96ms[0m
+2023.10.05 10:34:44 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:44 INFO  time: compiled find-hof in 37ms[0m
+2023.10.05 10:34:45 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:45 INFO  time: compiled find-hof in 89ms[0m
+2023.10.05 10:34:55 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:34:55 INFO  time: compiled find-hof in 0.28s[0m
+2023.10.05 10:35:10 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:35:10 INFO  time: compiled find-hof in 89ms[0m
+2023.10.05 10:35:54 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:35:54 INFO  time: compiled find-hof in 85ms[0m
+2023.10.05 10:37:13 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:37:13 INFO  time: compiled find-hof in 31ms[0m
+2023.10.05 10:37:22 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:37:22 INFO  time: compiled find-hof in 36ms[0m
+2023.10.05 10:37:31 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:37:31 INFO  time: compiled find-hof in 26ms[0m
+2023.10.05 10:37:44 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:37:44 INFO  time: compiled find-hof in 30ms[0m
+oct. 05, 2023 10:38:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 621
+2023.10.05 10:39:22 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:39:22 INFO  time: compiled find-hof in 36ms[0m
+2023.10.05 10:40:05 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:40:05 INFO  time: compiled find-hof in 42ms[0m
+2023.10.05 10:40:10 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:40:10 INFO  time: compiled find-hof in 75ms[0m
+oct. 05, 2023 10:40:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 751
+2023.10.05 10:40:40 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:40:40 INFO  time: compiled find-hof in 69ms[0m
+2023.10.05 10:40:53 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:40:53 INFO  time: compiled find-hof in 78ms[0m
+2023.10.05 10:40:58 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:40:58 INFO  time: compiled find-hof in 67ms[0m
+2023.10.05 10:41:09 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:41:09 INFO  time: compiled find-hof in 68ms[0m
+2023.10.05 10:41:11 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:41:11 INFO  time: compiled find-hof in 65ms[0m
+2023.10.05 10:41:29 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:41:29 INFO  time: compiled find-hof in 58ms[0m
+2023.10.05 10:43:31 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:43:31 INFO  time: compiled find-hof in 73ms[0m
+2023.10.05 10:43:55 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:43:55 INFO  time: compiled find-hof in 62ms[0m
+oct. 05, 2023 10:45:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1003
+2023.10.05 10:54:04 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:54:04 INFO  time: compiled find-hof in 83ms[0m
+2023.10.05 10:55:14 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:55:14 INFO  time: compiled find-hof in 65ms[0m
+2023.10.05 10:56:05 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:56:05 INFO  time: compiled find-hof in 29ms[0m
+2023.10.05 10:56:06 WARN  Could not load snapshot text for /Users/arthur/epfl/ba3/cs214/labs/find-hof/src/main/scala/find/find.scala[0m
+2023.10.05 10:56:07 WARN  Could not load snapshot text for /Users/arthur/epfl/ba3/cs214/labs/find-hof/src/main/scala/find/find.scala[0m
+2023.10.05 10:56:09 WARN  Could not load snapshot text for /Users/arthur/epfl/ba3/cs214/labs/find-hof/src/main/scala/find/find.scala[0m
+2023.10.05 10:56:11 WARN  Could not load snapshot text for /Users/arthur/epfl/ba3/cs214/labs/find-hof/src/main/scala/find/find.scala[0m
+2023.10.05 10:56:12 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:56:12 INFO  time: compiled find-hof in 64ms[0m
+2023.10.05 10:56:19 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:56:19 INFO  time: compiled find-hof in 64ms[0m
+2023.10.05 10:56:30 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:56:30 INFO  time: compiled find-hof in 64ms[0m
+2023.10.05 10:58:02 INFO  compiling find-hof (1 scala source)[0m
+2023.10.05 10:58:02 INFO  time: compiled find-hof in 57ms[0m
+2023.10.05 11:19:50 INFO  Shutting down server[0m
+2023.10.05 11:19:50 INFO  shutting down Metals[0m
+2023.10.05 11:19:50 INFO  Shut down connection with build server.[0m
+2023.10.05 11:19:50 INFO  Shut down connection with build server.[0m
+2023.10.05 11:19:50 INFO  Shut down connection with build server.[0m
+2023.10.05 11:19:50 INFO  Exiting server[0m
