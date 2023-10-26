@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Boids-par</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" integrity="sha512-0aPQyyeZrWj9sCA46UlmWgKOP0mUipLQ6OZXu8l4IcAmD2u31EPEy9VcIMvl7SoAaKe8bLXZhYoMaE/in+gcgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../fonts.css">
+</head>
+<body>
+<div id="container">
+<main>
+<p class="updated">Last updated on <time datetime=2023-10-25T11:52:02>Wednesday, October 25, 2023</time></p>
+<h1><a href="#boids-in-parallel" id="boids-in-parallel">Boids, in parallel</a></h1>
+<p>In this week&rsquo;s callback, you will look back at the Boids lab, where you did
+everything without polymorphism and Scala collections, and change the
+computation to use Scala collections, and identify opportunities to parallelize
+the code.</p>
+<h2><a href="#obtaining-the-lab-files" id="obtaining-the-lab-files">Obtaining the lab files</a></h2>
+<p>Run the following commands to obtain a copy of the lab:</p>
+<pre><code class="language-console">$ git clone https://gitlab.epfl.ch/lamp/cs-214/boids-par.git
+$ cd boids-par
+</code></pre>
+<p>The provided code contains a possible solution to the previous lab. You will
+need to modify the <code>BoidLogic.scala</code> file to complete this lab.</p>
+<h2><a href="#step-1-moving-to-a-new-collection" id="step-1-moving-to-a-new-collection">Step 1: Moving to a new collection</a></h2>
+<p>Since our homemade <code>BoidSequence</code> doesn&rsquo;t provide a parallel interface yet,
+we&rsquo;re going to have to switch to a different collection for now.</p>
+<p>Start by replacing instances of <code>BoidSequence</code> with <code>Vector[Boid]</code>. What other
+changes do you have to make to the previous solution now that you have access to
+a polymorphic collection?</p>
+<h2><a href="#step-2-boids-flying-out-in-parallel" id="step-2-boids-flying-out-in-parallel">Step 2: Boids flying out in parallel</a></h2>
+<p>With the modified implementation, can you find opportunities for
+parallelization? With some careful analysis, you can gain a lot of performance
+by adding a <code>.par</code> and <code>.seq</code> before and after your operations.</p>
+<details class = "note check">
+<p>Why do you need both the <code>.par</code> and the <code>.seq</code>?</p>
+<summary>Solution</summary>
+<p><code>(v: Vector[Boid]).par</code> produces a <code>ParVector[Boid]</code>. Performing <code>map</code>, etc. on
+it will return a parallel vector back where possible. However, since the
+external interface expects to see a <code>Vector[Boid]</code>, and not a <code>ParVector[Boid]</code>,
+you will have to convert the collection back to a <code>Vector[Boid]</code>. This can be
+done with a <code>.seq</code> or a <code>.toVector</code>.</p>
+<pre><code class="language-scala">  val isVector1: Vector[Int] = Vector(1, 2, 3).par            // ❌
+  // Found:    scala.collection.parallel.immutable.ParVector[Int]
+  // Required: Vector[Int]
+
+  val isVector2: Vector[Int] = Vector(1, 2, 3).par.seq        // ✔️
+  val isVector3: Vector[Int] = Vector(1, 2, 3).par.toVector   // ✔️
+</code></pre>
+</details>
+<p>Before jumping into the modifications, spend some time analyzing the sequential
+code. Identify all the places where independent calculations are being made one
+after the other.</p>
+<p>It is most efficient to start from the &ldquo;top&rdquo; of your computation. The larger the
+computation you can split up, the better! This is akin to dividing a big project
+into its major components first, rather than starting with the tiny details. By
+splitting the largest independent chunks of the computation, we can maximize the
+amount of work done in parallel with the least number of threads created.</p>
+<details class = "hint">
+<summary>Hint</summary>
+<p>You can parallelize <code>tickWorld</code> as the force on one boid is independent of the
+force on another boid in a given step.</p>
+</details>
+<p>Remember, not all parts of the code might be suitable for parallelization.
+Sometimes, the overhead of parallel execution might outweigh its benefits. Test,
+test, and test your code again!</p>
+<h2><a href="#testing" id="testing">Testing</a></h2>
+<p>As changing the representation of the data should not affect the behavior of the
+program, all the previous test suites should continue to pass.</p>
+<p>You can run all suites as usual with:</p>
+<pre><code class="language-console">$ sbt test
+</code></pre>
+<p>To test the performance of your code as you play with it, start by commenting the relevant line in <code>src/main/scala/boids/Benchmarks.scala</code>:</p>
+<pre><code class="language-scala">class Benchmarks:
+  @Benchmark
+  def tickWorldComplete1K =
+    val allBoids = generateRandomBoids(1000)
+    // UNCOMMENT THIS WHEN YOU HAVE CONVERTED EVERYTHING TO VECTORS
+    // tickWorld(allBoids, defaultPhysics)
+</code></pre>
+<p>The benchmark is written with <code>Vector[Boid]</code>, so it would not have compiled before your change.</p>
+<p>You can run the benchmark by typing <code>Jmh/run -t max -f 1</code> in <code>sbt</code>. <code>-t max</code>
+asks to make the maximum number of threads available, and <code>-f 1</code> asks to run
+only one fork, i.e., run the whole benchmark suite for only one iteration, just
+to make it faster.</p>
+<p>You can write your own functions inside this and tag them <code>@Benchmark</code> to test
+them as well.</p>
+<p>You can run specific benchmarks with their name as <code>Jmh/run -t max -f 1 Benchmarks.tickWorldComplete1K</code>. Note that adding any non-benchmark members to
+the <code>Benchmarks</code> class will probably result in errors. Use the <code>Benchmarks</code>
+<em>object</em> for this.</p>
+<h2><a href="#submit-your-patch" id="submit-your-patch">Submit your patch!</a></h2>
+<p>Once you are done, you should:</p>
+<ul>
+<li>Commit your work to your local repository,</li>
+<li>Submit a patch named <code>lab.patch</code> to Moodle with your changes set.</li>
+</ul>
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" integrity="sha512-rdhY3cbXURo13l/WU9VlaRyaIYeJ/KBakckXIvJNAQde8DgpOmE+eZf7ha4vdqVjTtwQt69bD2wH2LXob/LB7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scala.min.js" integrity="sha512-F7HBSjTYDsAreqced8cggvF5AuB+j2TXktnLYpCrpWF2fhQJJCc5KimR3LYLs0AppTBecbPN9M9Hjf8yC2WstA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script src="../../scripts.js"></script>
+</body>
+</html>
