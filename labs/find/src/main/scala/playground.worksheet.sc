@@ -17,3 +17,7 @@ fruits.hasNextSibling()
 fruits.nextSibling().path()
 
 findByNameAndPrint(food, "project")
+
+val l = List(Option(1), Option(2), Option(3), Option(None), Option(5))
+
+l.flatMap(x => x)
