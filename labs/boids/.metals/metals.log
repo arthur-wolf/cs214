@@ -836,3 +836,27 @@ INFOS: Schema "PUBLIC" is up to date. No migration necessary.
 2023.09.30 09:05:25 INFO  Shut down connection with build server.
 2023.09.30 09:05:25 INFO  Shut down connection with build server.
 2023.09.30 09:05:25 INFO  Exiting server
+2023.11.18 09:30:18 INFO  Started: Metals version 1.1.0 in folders '/Users/arthur/epfl/ba3/cs214/labs/boids' for client Visual Studio Code 1.84.2.
+2023.11.18 09:30:18 INFO  Attempting to connect to the build server...
+2023.11.18 09:30:18 INFO  skipping build import with status 'Installed'
+2023.11.18 09:30:18 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.11.18 09:30:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/boids/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.11.18 09:30:20 INFO  Attempting to connect to the build server...
+2023.11.18 09:30:20 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.11.18 09:30:20 INFO  Attempting to connect to the build server...
+2023.11.18 09:30:20 INFO  Bloop uses /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home defined at /Users/arthur/.bloop/bloop.json
+2023.11.18 09:30:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/boids/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.11.18 09:30:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/arthur/epfl/ba3/cs214/labs/boids/project/project/.metals/bsp.trace.json or /Users/arthur/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.11.18 09:30:20 INFO  time: Connected to build server in 1.75s
+2023.11.18 09:30:20 INFO  Connected to Build server: Bloop v1.5.11
+2023.11.18 09:30:22 INFO  time: indexed workspace in 2.34s
+2023.11.18 09:30:23 INFO  compiling boids (8 scala sources)
+2023.11.18 09:30:27 INFO  compiling boids-test (2 scala sources)
+2023.11.18 09:30:27 INFO  time: compiled boids in 4.47s
+2023.11.18 09:30:27 INFO  time: compiled boids-test in 0.79s
+2023.11.18 15:11:04 INFO  Shutting down server
+2023.11.18 15:11:04 INFO  shutting down Metals
+2023.11.18 15:11:04 INFO  Shut down connection with build server.
+2023.11.18 15:11:04 INFO  Shut down connection with build server.
+2023.11.18 15:11:04 INFO  Shut down connection with build server.
+2023.11.18 15:11:04 INFO  Exiting server
