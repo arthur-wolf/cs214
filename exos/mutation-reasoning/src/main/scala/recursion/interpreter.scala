@@ -24,6 +24,20 @@ end RecursiveInterpreter
 object LoopInterpreter:
   import Operation.*
   import scala.collection.mutable.Stack
-  def eval(p: List[Operation]): Stack[Int] =
-    ???
+
+    def eval(p: List[Operation]): Stack[Int] =
+      val stack = Stack.empty[Int]
+      for op <- p do
+        op match
+          case Push(n) => stack.push(n)
+          case Add() if stack.size >= 2 =>
+            val n1 = stack.pop()
+            val n2 = stack.pop()
+            stack.push(n2 + n1)
+          case Substr() if stack.size >= 2 =>
+            val n1 = stack.pop()
+            val n2 = stack.pop()
+            stack.push(n2 - n1)
+          case _ => stack
+      stack
 end LoopInterpreter

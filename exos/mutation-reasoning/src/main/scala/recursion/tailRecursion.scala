@@ -21,13 +21,13 @@ def sum(l: List[Int], acc: Int = 0): Int =
   else sum(l.tail, acc + 1)
 
 def sumLoop(l: List[Int]): Int =
-    var input = l
-    var output = 0
-    while true do
-      if input.isEmpty then return output
-      output += l.head
-      input = l.tail
-    throw new AssertionError("Unreachable")
+  var acc = 0
+  var current = l
+  while true do
+    if current.isEmpty then return acc
+    acc += current.head
+    current = current.tail
+  throw new AssertionError("Unreachable")
 
 @tailrec
 def foldLeft(l: List[Int], acc: Int)(f: (Int, Int) => Int): Int =
@@ -35,23 +35,29 @@ def foldLeft(l: List[Int], acc: Int)(f: (Int, Int) => Int): Int =
   else foldLeft(l.tail, f(acc, l.head))(f)
 
 def foldLeftLoop(l: List[Int], startValue: Int)(f: (Int, Int) => Int): Int =
-    var curr = l
-    var acc = startValue
-    while true do
-      if curr.isEmpty then return acc
-      acc += f(acc, curr.head)
-      curr = curr.tail
-    throw new AssertionError("Unreachable")
+  var current = l
+  var accumulator = startValue
+  while true do
+    if current.isEmpty then return accumulator
+    accumulator = f(accumulator, current.head)
+    current = current.tail
+  throw new AssertionError("Unreachable")
 
 
 extension [T](l: List[T])
   def foldt(z: T)(op: (T, T) => T): T =
     var list = l
+
     while true do
       list match
-        case _ :: _ :: tail => list = list.pairs(op)
+        // if list.size > 1
+        case _ :: _ :: tail =>
+          list = list.pairs(op)
+        // if list.size == 1
         case a :: Nil => return a
+        // if list.size == 0
         case Nil => return z
+
     throw new AssertionError("Unreachable")
 
 extension [T](l: List[T])
@@ -88,8 +94,7 @@ object MapContext:
       acc: MutableList.Cons
   ): Unit =
     l match
-    case Nil => ()
-    case Cons(h, t) =>
-      acc.tail = Cons(f(h), Nil)
-      mapTRWorker(t, f, acc.tail.asInstanceOf[Cons])
-end MapContext
+      case Nil => ()
+      case Cons(h, t) =>
+        acc.tail = Cons(f(h), Nil)
+        mapTRWorker(t, f, acc.tail.asInstanceOf[Cons])
